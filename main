@@ -1,0 +1,16 @@
+#include <iostream>
+#include "Person.cpp"
+#include "Person.h"
+#include "Array.h"
+#include "Array.cpp"
+#include "String.h"
+
+
+int main() {
+  std::string surname = "skay";
+	std::string name = "fait";
+	std::string year = "2004";
+	Person<std::string> p1(surname, name, year);
+	std::cout << p1;
+	return 0;
+}
