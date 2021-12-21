@@ -1,7 +1,7 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 #include <iostream>
-
+#include "Person.h"
 template <class P>
 class Array
 {
@@ -19,6 +19,12 @@ public:
 	void swap(Array& other) noexcept;
 
 	size_t getSize() const { return size_; }
+	enum Keys {
+		SURNAME,
+		NAME,
+		YEAR
+	};
+	void sortArray(Keys key);
 private:
 	static const int MULTIPLIER = 2;
 	size_t size_;
