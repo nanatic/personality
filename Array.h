@@ -1,7 +1,7 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 #include <iostream>
-#include "Person.h"
+
 template <class P>
 class Array
 {
